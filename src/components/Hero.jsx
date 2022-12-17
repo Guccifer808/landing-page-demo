@@ -27,7 +27,7 @@ const Hero = () => {
           “Anyone who keeps learning stays young. The greatest thing in life is
           to keep your mind young.” <br />— Henry Ford
         </p>
-        <button className='bg-amber-200/95 w-[7rem] rounded-lg font-semibold uppercase mx-auto px-6 py-2 mt-8 text-[#111827]'>
+        <button className='bg-amber-200/95 hover:bg-amber-400 w-fit inline-flex items-center rounded-lg font-semibold text-center uppercase mx-auto px-6 py-2 mt-8 text-[#111827]'>
           Learn
         </button>
       </div>

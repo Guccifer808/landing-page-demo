@@ -6,7 +6,7 @@ const Navbar = () => {
   const sidebarHandler = () => setSidebar(!sidebar);
 
   return (
-    <div className='flex h-20 max-w-[1850px] mx-auto px-5 justify-between items-center text-slate-100'>
+    <div className='flex h-20 max-w-[1850px] mx-auto px-5 justify-between items-center text-stone-100'>
       <h1 className='w-full text-3xl font-bold text-stone-100'>DEMO</h1>
       <ul className='hidden md:flex font-semibold'>
         <li className='p-4'>Home</li>

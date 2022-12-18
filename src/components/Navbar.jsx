@@ -7,21 +7,22 @@ const Navbar = () => {
 
   return (
     <div className='flex h-20 max-w-[1850px] mx-auto px-5 justify-between items-center text-stone-100'>
-      <h1 className='w-full text-3xl font-bold text-stone-100'>DEMO</h1>
+      <h1 className='w-full text-3xl font-bold text-amber-200/95'>DEMO</h1>
       <ul className='hidden md:flex font-semibold'>
         <li className='p-4'>Home</li>
+        <li className='p-4'>Resources</li>
         <li className='p-4'>Services</li>
         <li className='p-4'>About</li>
         <li className='p-4'>Contacts</li>
       </ul>
       {/* Mobile menu */}
       <div onClick={sidebarHandler} className='block md:hidden'>
-        {!sidebar ? <RiCloseLine size={30} /> : <RiMenu4Fill size={24} />}
+        {sidebar ? <RiCloseLine size={30} /> : <RiMenu4Fill size={24} />}
       </div>
       {/* Mobile menu sidebar */}
       <div
         className={
-          !sidebar
+          sidebar
             ? 'fixed h-full left-0 top-0 w-[66%] border-r border-slate-700 backdrop-blur-sm duration-500 ease-in-out'
             : 'fixed left-[-100%]'
         }
